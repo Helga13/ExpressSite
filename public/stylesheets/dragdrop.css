@@ -1,0 +1,15 @@
+#dropbox{
+	width: 400px;
+	height: 400px;
+	background: grey;
+	float: left;
+	padding: 10px;
+}
+
+#picturesbox{
+	width: 400px;
+	height: 400px;
+	background: grey;
+	float: left;
+	padding: 10px;
+}

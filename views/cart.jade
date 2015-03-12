@@ -1,0 +1,13 @@
+extends layout
+block content
+	div(ng-controller='CastController')
+		div(ng-repeat='item in items')
+			h4 {{item.title}}
+			input(type='number', min = 0, ng-model='item.quantity')
+			span {{item.price | currency}}
+			b {{item.price * item.quantity | currency}}
+		br
+		div Total:{{totalCart() | currency}}
+		div Discount:{{bill}}%
+		div TotalSum:{{sum}}
+		div TotalSum:{{(totalCart() - totalCart() * bill/100).toFixed(2)}}

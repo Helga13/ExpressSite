@@ -1,0 +1,17 @@
+extends layout
+block content
+	h2 Video
+	section#player
+		video(width=720, height=400, id='media')
+			source(src='http://minkbooks.com/content/trailer.mp4')
+			source(src='http://minkbooks.com/content/trailer.ogg')
+			source(src='http://minkbooks.com/content/trailer.webm')
+		nav
+			div#buttons
+				input(type='button', id='play', value='Play')
+				input(type='button', id='mute', value='Mute')
+			div#bar
+				div#progress
+			div#control
+				input(type='range', id='volume', min=0, max=1, step=0.1, value=0.6)
+			div.clear

@@ -1,0 +1,42 @@
+{
+	"name": "*",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www"
+	},
+	"dependencies": {
+	"async": "*",
+	"body-parser": "*",
+	"character-parser": "*",
+	"connect-mongo": "*",
+	"constantinople": "*",
+	"cookie-parser": "*",
+	"crypto": "*",
+	"debug": "*",
+	"express": "*",
+	"fs": "*",
+	"grunt": "*",
+	"grunt-contrib-jshint": "*",
+	"grunt-contrib-concat": "*",
+	"grunt-contrib-uglify": "*",
+	"grunt-contrib-cssmin": "*",
+	"jade": "*",
+	"jquery": "*",
+	"less": "*",
+	"less-middleware": "*",
+	"mongoose": "*",
+	"morgan": "*",
+	"nconf": "*",
+	"path": "*",
+	"serve-favicon": "*",
+	"socket.io": "*",
+	"static-favicon": "*",
+	"transformers": "*",
+	"void-elements": "*",
+	"with": "*",
+	"bootstrap": "*",
+	"chalk": "*"
+	
+	}
+}

@@ -1,0 +1,12 @@
+extends layout
+block content
+	if userid
+		a(href='/logout') Exit
+		a(href='/cabinet') Cabinet
+	else
+		a(href='/reg') Registration !{userid}
+	h3 Registration form
+	form(method='POST', action='/reg')
+		input(type='text', name='username')
+		input(type='password', name='password')
+		input(type='submit', value='ok')

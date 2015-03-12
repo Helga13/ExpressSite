@@ -1,0 +1,42 @@
+doctype html
+html(ng-app)
+	head
+		meta(charset='utf-8')
+		title TinyGiftshop
+		for style in styles
+			link(rel='stylesheet', href='#{style}')
+		for script in scripts
+			script(src='#{script}')
+	body
+		.wrapper
+			.header
+				img.logo(src='images/logo.jpg')
+				h1 TinyGiftshop
+			nav.topmenu
+				a(href='index') Главная
+				a(href='about') О нас
+				a(href='ishop') Интернет-магазин
+				a(href='workshop') Мастер-классы
+				a(href='video') Видео
+				a(href='contacts') Контакты
+			.mid
+				.col-md-3
+					nav.leftmenu1
+						a(href='canvas') Canvas
+						a(href='chat') Chat
+						a(href='location') Location
+						a(href='dragdrop') Dragdrop
+						a(href='cart') Cart
+						a(href='storage') Storage
+						a(href='reg') Registration/Authorization
+						a(href='cabinet') Cabinet
+					nav.leftmenu
+						a(href='#') Полезные ссылки
+						a(href='#') Сотрудничество
+						a(href='#') Написать автору
+				.col-md-9
+					.content
+						block content
+			.footer
+				.copyright
+					| © Copyright
